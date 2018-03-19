@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAE1E21B205FE49100D209D3 /* DetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE1E219205FE49100D209D3 /* DetailsCell.m */; };
+		AAE1E21C205FE49100D209D3 /* DetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE1E21A205FE49100D209D3 /* DetailsCell.xib */; };
+		AAE1E21F205FE79E00D209D3 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE1E21E205FE79E00D209D3 /* DetailsViewController.m */; };
+		AAE1E2222060011600D209D3 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE1E2212060011600D209D3 /* CustomCell.m */; };
 		AAECDB4D205D1AF000205FAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAECDB4C205D1AF000205FAF /* AppDelegate.m */; };
 		AAECDB50205D1AF000205FAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAECDB4F205D1AF000205FAF /* ViewController.m */; };
 		AAECDB53205D1AF000205FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAECDB51205D1AF000205FAF /* Main.storyboard */; };
@@ -16,6 +20,7 @@
 		AAECDB5E205D1AF000205FAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAECDB5D205D1AF000205FAF /* main.m */; };
 		AAECDB68205D1AF000205FAF /* CoreDataInObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAECDB67205D1AF000205FAF /* CoreDataInObjCTests.m */; };
 		AAECDB73205D1AF000205FAF /* CoreDataInObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAECDB72205D1AF000205FAF /* CoreDataInObjCUITests.m */; };
+		AAECDB82205D20F000205FAF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAECDB81205D20F000205FAF /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AAE1E218205FE49100D209D3 /* DetailsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsCell.h; sourceTree = "<group>"; };
+		AAE1E219205FE49100D209D3 /* DetailsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsCell.m; sourceTree = "<group>"; };
+		AAE1E21A205FE49100D209D3 /* DetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCell.xib; sourceTree = "<group>"; };
+		AAE1E21D205FE79E00D209D3 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		AAE1E21E205FE79E00D209D3 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		AAE1E2202060011600D209D3 /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		AAE1E2212060011600D209D3 /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		AAECDB48205D1AF000205FAF /* CoreDataInObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataInObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAECDB4B205D1AF000205FAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAECDB4C205D1AF000205FAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +65,7 @@
 		AAECDB6E205D1AF000205FAF /* CoreDataInObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataInObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAECDB72205D1AF000205FAF /* CoreDataInObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataInObjCUITests.m; sourceTree = "<group>"; };
 		AAECDB74205D1AF000205FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAECDB81205D20F000205FAF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAECDB82205D20F000205FAF /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +101,7 @@
 				AAECDB66205D1AF000205FAF /* CoreDataInObjCTests */,
 				AAECDB71205D1AF000205FAF /* CoreDataInObjCUITests */,
 				AAECDB49205D1AF000205FAF /* Products */,
+				AAECDB80205D20F000205FAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +122,13 @@
 				AAECDB4C205D1AF000205FAF /* AppDelegate.m */,
 				AAECDB4E205D1AF000205FAF /* ViewController.h */,
 				AAECDB4F205D1AF000205FAF /* ViewController.m */,
+				AAE1E2202060011600D209D3 /* CustomCell.h */,
+				AAE1E2212060011600D209D3 /* CustomCell.m */,
+				AAE1E21D205FE79E00D209D3 /* DetailsViewController.h */,
+				AAE1E21E205FE79E00D209D3 /* DetailsViewController.m */,
+				AAE1E218205FE49100D209D3 /* DetailsCell.h */,
+				AAE1E219205FE49100D209D3 /* DetailsCell.m */,
+				AAE1E21A205FE49100D209D3 /* DetailsCell.xib */,
 				AAECDB51205D1AF000205FAF /* Main.storyboard */,
 				AAECDB57205D1AF000205FAF /* Assets.xcassets */,
 				AAECDB59205D1AF000205FAF /* LaunchScreen.storyboard */,
@@ -133,6 +155,14 @@
 				AAECDB74205D1AF000205FAF /* Info.plist */,
 			);
 			path = CoreDataInObjCUITests;
+			sourceTree = "<group>";
+		};
+		AAECDB80205D20F000205FAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAECDB81205D20F000205FAF /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +273,7 @@
 			files = (
 				AAECDB5B205D1AF000205FAF /* LaunchScreen.storyboard in Resources */,
 				AAECDB58205D1AF000205FAF /* Assets.xcassets in Resources */,
+				AAE1E21C205FE49100D209D3 /* DetailsCell.xib in Resources */,
 				AAECDB53205D1AF000205FAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +302,10 @@
 				AAECDB50205D1AF000205FAF /* ViewController.m in Sources */,
 				AAECDB56205D1AF000205FAF /* CoreDataInObjC.xcdatamodeld in Sources */,
 				AAECDB5E205D1AF000205FAF /* main.m in Sources */,
+				AAE1E21F205FE79E00D209D3 /* DetailsViewController.m in Sources */,
+				AAE1E2222060011600D209D3 /* CustomCell.m in Sources */,
 				AAECDB4D205D1AF000205FAF /* AppDelegate.m in Sources */,
+				AAE1E21B205FE49100D209D3 /* DetailsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
