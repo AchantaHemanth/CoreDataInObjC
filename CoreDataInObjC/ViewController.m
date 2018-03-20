@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "AppDelegate.h"
 #import "DetailsViewController.h"
+#import "DetailsViewController1.h"
 #import "CustomCell.h"
 #define     isiPhone4()     [UIScreen mainScreen].bounds.size.height == 480
 #define     isiPhone5()     [UIScreen mainScreen].bounds.size.height == 568
@@ -123,9 +124,13 @@
 }
  -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DetailsViewController * dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailsViewController"];
-    dvc.detailArray = self.array[indexPath.row];
-    [self.navigationController pushViewController:dvc animated:YES];
+
+    DetailsViewController1 * dvc1 = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailsViewController1"];
+    dvc1.details1 = self.array[indexPath.row] ;
+    [self.navigationController pushViewController:dvc1 animated:YES];
+    //[self presentViewController:dvc1 animated:YES completion:nil];
+    
+    
 }
 
 

@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"%@",self.detailArray);
+    NSLog(@"%lu",(unsigned long)self.detailArray.count);
 }
 
 - (void)didReceiveMemoryWarning {

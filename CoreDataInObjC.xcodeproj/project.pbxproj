@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAD7E2E62061249C00CA3858 /* DetailsViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7E2E52061249C00CA3858 /* DetailsViewController1.m */; };
 		AAE1E21B205FE49100D209D3 /* DetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE1E219205FE49100D209D3 /* DetailsCell.m */; };
 		AAE1E21C205FE49100D209D3 /* DetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE1E21A205FE49100D209D3 /* DetailsCell.xib */; };
 		AAE1E21F205FE79E00D209D3 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE1E21E205FE79E00D209D3 /* DetailsViewController.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AAD7E2E42061249C00CA3858 /* DetailsViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController1.h; sourceTree = "<group>"; };
+		AAD7E2E52061249C00CA3858 /* DetailsViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController1.m; sourceTree = "<group>"; };
 		AAE1E218205FE49100D209D3 /* DetailsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsCell.h; sourceTree = "<group>"; };
 		AAE1E219205FE49100D209D3 /* DetailsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsCell.m; sourceTree = "<group>"; };
 		AAE1E21A205FE49100D209D3 /* DetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCell.xib; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				AAE1E219205FE49100D209D3 /* DetailsCell.m */,
 				AAE1E21A205FE49100D209D3 /* DetailsCell.xib */,
 				AAECDB51205D1AF000205FAF /* Main.storyboard */,
+				AAD7E2E42061249C00CA3858 /* DetailsViewController1.h */,
+				AAD7E2E52061249C00CA3858 /* DetailsViewController1.m */,
 				AAECDB57205D1AF000205FAF /* Assets.xcassets */,
 				AAECDB59205D1AF000205FAF /* LaunchScreen.storyboard */,
 				AAECDB5C205D1AF000205FAF /* Info.plist */,
@@ -300,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAECDB50205D1AF000205FAF /* ViewController.m in Sources */,
+				AAD7E2E62061249C00CA3858 /* DetailsViewController1.m in Sources */,
 				AAECDB56205D1AF000205FAF /* CoreDataInObjC.xcdatamodeld in Sources */,
 				AAECDB5E205D1AF000205FAF /* main.m in Sources */,
 				AAE1E21F205FE79E00D209D3 /* DetailsViewController.m in Sources */,
