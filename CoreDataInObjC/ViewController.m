@@ -36,24 +36,27 @@
 - (IBAction)saveBtnPressed:(id)sender
 {
     
+    // To Save Data Using Core Data
     NSManagedObject *entity = [NSEntityDescription insertNewObjectForEntityForName:@"Details" inManagedObjectContext:context];
     [entity setValue:self.firstnameTF.text forKey:@"firstname"];
     [entity setValue:self.lastnameTF.text forKey:@"lastname"];
     [entity setValue:self.emailTF.text forKey:@"email"];
     [entity setValue:self.mobileTF.text forKey:@"mobile"];
     [appDelegate saveContext];
-    NSFetchRequest * request = [NSFetchRequest fetchRequestWithEntityName:@"Details"];
-    self.array = [[context executeFetchRequest:request error:nil]mutableCopy];
-    [self.detailTV reloadData];
     self.firstnameTF.text = @"";
     self.lastnameTF.text = @"";
     self.mobileTF.text = @"";
+    
+    // To Fetch Data Using Core Data
+    NSFetchRequest * request = [NSFetchRequest fetchRequestWithEntityName:@"Details"];
+    self.array = [[context executeFetchRequest:request error:nil]mutableCopy];
+    [self.detailTV reloadData];
+    
     }
 
 - (IBAction)refreshBtnPressed:(id)sender
 {
     NSFetchRequest * request = [NSFetchRequest fetchRequestWithEntityName:@"Details"];
-    //NSArray * array = [context executeFetchRequest:request error:nil];
     self.array = [[context executeFetchRequest:request error:nil]mutableCopy];
     [self.detailTV reloadData];
 }
@@ -62,22 +65,18 @@
 {
     [super viewDidAppear:animated];
     NSFetchRequest * request = [NSFetchRequest fetchRequestWithEntityName:@"Details"];
-    //NSArray * array = [context executeFetchRequest:request error:nil];
     self.array = [[context executeFetchRequest:request error:nil]mutableCopy];
     [self.detailTV reloadData];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-
+//UITableViewDelegate Methods
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
      return self.array.count;
 }
+
 - (UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell" forIndexPath:indexPath];
@@ -122,6 +121,7 @@
         return 80;
     }
 }
+
  -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 

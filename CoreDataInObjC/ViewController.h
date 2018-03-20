@@ -12,16 +12,16 @@
 @interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITextField *firstnameTF;
-
 @property (strong, nonatomic) IBOutlet UITextField *lastnameTF;
 @property (strong, nonatomic) IBOutlet UITextField *emailTF;
-
 @property (strong, nonatomic) IBOutlet UITextField *mobileTF;
-- (IBAction)saveBtnPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UITableView *detailTV;
+
+@property (strong, nonatomic) NSMutableArray * array;
+- (IBAction)saveBtnPressed:(id)sender;
 - (IBAction)refreshBtnPressed:(id)sender;
 
 
-@property (strong, nonatomic) NSMutableArray * array;
+
 @end
 
